@@ -1,0 +1,27 @@
+{
+  "test_hours": 336,
+  "window": 168,
+  "metrics": {
+    "naive_24": {
+      "RMSE": 1313.29,
+      "MAE": 873.67
+    },
+    "naive_168": {
+      "RMSE": 534.43,
+      "MAE": 343.28
+    },
+    "prophet_only": {
+      "RMSE": 1112.14,
+      "MAE": 871.54
+    },
+    "lstm_only": {
+      "RMSE": 557.26,
+      "MAE": 398.54
+    },
+    "hybrid": {
+      "RMSE": 552.69,
+      "MAE": 397.27
+    }
+  },
+  "best": "naive_168"
+}
