@@ -129,3 +129,15 @@ Deploy on Streamlit Community Cloud:
 4. Deploy.
 
 The raw parquet files are NOT needed by the app and can stay out of the repo.
+
+## Interactive forecasts in the app
+
+The app's **Forecast** tab serves precomputed Prophet forecasts (city + busiest
+zones, 7 days ahead, with uncertainty bands). Regenerate them anytime:
+
+```bash
+python src/batch_forecast.py      # writes outputs/forecasts.csv
+```
+
+Commit `outputs/forecasts.csv` and the app picks it up. No model training runs
+inside the app, so it stays deployable on Streamlit Community Cloud.
