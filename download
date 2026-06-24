@@ -1,4 +1,0 @@
-data/raw/*.parquet
-data/raw/zones_unz/
-__pycache__/
-*.pyc
